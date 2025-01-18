@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+#app {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.fact {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.shloka {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tile {
+    flex: 1 1 calc(33.333% - 40px); /* Three tiles per row with some margin */
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #FFD700; /* Golden color */
+    border: 2px solid #FF8C00; /* Orange border */
+    color: #8B4513; /* Brown text */
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .tile {
+        flex: 1 1 calc(50% - 40px); /* Two tiles per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .tile {
+        flex: 1 1 100%; /* One tile per row on very small screens */
+    }
+}
